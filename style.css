@@ -1,0 +1,91 @@
+﻿html, body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Avenir Next W01 Thin', Magneto, Marlett, sans-serif;
+}
+
+#top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+    background-color: #B933C6;
+}
+
+#top-title {
+    position: absolute;
+    left: 60px;
+    top: 3px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#map {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#map path:hover {
+    fill: url(#hov);
+}
+
+#window {
+    display:none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    width: 175px;
+    background-color: #000000;
+    margin-right: -175px;
+}
+
+#window > img {
+    padding-left: 30px;
+    padding-top: 20px;
+    width: 150px;
+}
+
+#window-type {
+    font-family: 'Avenir Next W01 Thin', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 175px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#window-panel {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.rc-heading {
+    font-family: 'Avenir LT W01 85 Heavy', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.rc-value {
+    font-family: 'Avenir Next W01 Thin', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.rc-panel:hover {
+    background-color: #6b8e23;
+}

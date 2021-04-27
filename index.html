@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Symulacja przewidywania zacmienia slonca</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'>
+    <link type='image/ico' rel='shortcut icon' href='img/unnamed.ico' />
+    <link type='image/ico' rel='icon' href='img/unnamed.ico' />
+    <link type='image/ico' rel='apple-touch-icon' href='img/unnamed.png' />
+    <link type='text/css' rel='stylesheet' href='css/bootstrap.min.css' />
+    <link type='text/css' rel='stylesheet' href='//fast.fonts.com/cssapi/23855eec-5fdf-4594-9898-0113a04bfef0.css' />
+    <link type='text/css' rel='stylesheet' href='//js.arcgis.com/3.19/esri/css/esri.css'>
+    <link type='text/css' rel='stylesheet' href='style.css'>
+    <script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>
+    <script type='text/javascript' src='js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='js/d3.min.js'></script>
+    <script type='text/javascript' src='//js.arcgis.com/3.19compact/'></script>
+    <script type='text/javascript' src='index.js'></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-10866840-3', 'esri.com');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+   <div id='map'></div>
+    <div id='window'>
+        <img id='window-image' src='img/total.jpg'>
+        <div id='window-type'></div>
+        <div id='window-panel'>
+            <div id='panel-date' class='rc-panel'>
+                <div class='rc-heading'>Data</div>
+                <div id='window-date' class='rc-value'></div>
+            </div>
+            <div id='panel-time' class='rc-panel'>
+                <div class='rc-heading'>Czas</div>
+                <div id='window-time' class='rc-value'></div>
+            </div>
+            <div id='panel-duration' class='rc-panel'>
+                <div class='rc-heading'>Trwanie</div>
+                <div id='window-duration' class='rc-value'></div>
+            </div>
+            <div id='panel-width' class='rc-panel'>
+                <div class='rc-heading'>Szerokosc</div>
+                <div id='window-width' class='rc-value'></div>
+            </div>
+            <div id='panel-magnitude' class='rc-panel'>
+                <div class='rc-heading'>Wielkosc</div>
+                <div id='window-magnitude' class='rc-value'></div>
+            </div>
+            <div id='panel-sunaltitude' class='rc-panel'>
+                <div class='rc-heading'>Azymut słońca</div>
+                <div id='window-sunaltitude' class='rc-value'></div>
+            </div>
+            <div id='panel-lunation' class='rc-panel'>
+                <div class='rc-heading'>Lunacja</div>
+                <div id='window-lunation' class='rc-value'></div>
+            </div>
+            <div id='panel-saroscycle' class='rc-panel'>
+                <div class='rc-heading'>Cykl Sarosa</div>
+                <div id='window-saroscycle' class='rc-value'></div>
+            </div>
+            <div id='panel-gamma' class='rc-panel'>
+                <div class='rc-heading'>Gamma</div>
+                <div id='window-gamma' class='rc-value'></div>
+            </div>
+            <div id='panel-delta' class='rc-panel'>
+                <div class='rc-heading'>Delta-T</div>
+                <div id='window-delta' class='rc-value'></div>
+            </div>
+        </div>
+    </div>
+   <div id='top'>
+       <div id='top-title'>Symulacja przewidywania zacmienia Slonca</div>
+       <a id='top-logo-esri' href='https://www.esri.com' target='_blank'></a>
+   </div>
+</body>
+</html>
